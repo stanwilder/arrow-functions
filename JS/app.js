@@ -143,7 +143,7 @@ let message = function(name) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(message('Allie'));
+console.log(message('Allie'));
 
 
 let Student = function(name, age, hometown) {
@@ -168,7 +168,7 @@ Student.prototype.greeting = function() {
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
-// console.log(joe.greeting());
+console.log(joe.greeting());
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
@@ -179,7 +179,7 @@ Student.courseName = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(Student.courseName());
+console.log(Student.courseName());
 
 
 
@@ -188,19 +188,17 @@ Student.courseName = function() {
 Student.prototype.scope = function() {
   console.log(this);
 };
+Student.prototype.scopeArrow =() => console.log(this)
+joe.scope();
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
 
-Student.prototype.scopeArrow = () => console.log(this);
-
-// TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// references the object in the above constructor function
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// object referring to scope arrow. 
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// this stays within the local scope of the arrow function.
