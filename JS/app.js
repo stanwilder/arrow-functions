@@ -197,7 +197,7 @@ joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// references the object in the above constructor function
+// references the object in the above constructor function.
 // 2. What is "this" when joe.scopeArrow() is invoked?
 // object referring to scope arrow. 
 // 3. Explain why "this" is different when an arrow function is used.
